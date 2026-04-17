@@ -2,67 +2,123 @@
 <html>
 <head>
 <title>Devika | Portfolio</title>
+
 <style>
 body {
-    font-family: Arial;
     margin: 0;
-    background: #f4f6f8;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
 }
+
 header {
-    background: #0d6efd;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 60px 20px;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
 section {
-    margin: 20px;
-    padding: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
     background: white;
-    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
-h2 {
-    color: #0d6efd;
+
+.card:hover {
+    transform: translateY(-10px);
 }
+
 .btn {
-    background: #0d6efd;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #4facfe;
     color: white;
-    padding: 10px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
 <h1>Devika</h1>
-<p>Data Analytics Portfolio</p>
+<p>Data Analytics Portfolio 🚀</p>
 </header>
 
 <section>
 <h2>About Me</h2>
-<p>B.Tech Computer Science student passionate about Data Analytics and Visualization.</p>
+<p>I am a B.Tech Computer Science student passionate about Data Analytics and Visualization.</p>
 </section>
 
 <section>
 <h2>Projects</h2>
-<ul>
-<li>Task-1: Data Cleaning</li>
-<li>Task-2: EDA</li>
-<li>Task-3: Power BI Dashboard</li>
-<li>Task-4: Data Storytelling & Hypothesis Testing</li>
-</ul>
+
+<div class="container">
+
+<div class="card">
+<h3>Task-1</h3>
+<p>Data Cleaning using Python</p>
+<a class="btn" href="https://github.com/devika22507/task-1_repo" target="_blank">View Project</a>
+</div>
+
+<div class="card">
+<h3>Task-2</h3>
+<p>Exploratory Data Analysis</p>
+<a class="btn" href="https://github.com/devika22507/task-2_repo" target="_blank">View Project</a>
+</div>
+
+<div class="card">
+<h3>Task-3</h3>
+<p>Power BI Dashboard</p>
+<a class="btn" href="https://github.com/devika22507/task-3_repo" target="_blank">View Project</a>
+</div>
+
+<div class="card">
+<h3>Task-4</h3>
+<p>Data Storytelling & Hypothesis Testing</p>
+<a class="btn" href="https://github.com/devika22507/task-4_repo" target="_blank">View Project</a>
+</div>
+
+</div>
+
 </section>
 
 <section>
 <h2>Key Insights</h2>
-<ul>
-<li>Morning peak sales (8–11 AM)</li>
-<li>Coffee is top-selling product</li>
-<li>Customers buy multiple items</li>
-<li>Weekday sales higher than weekends</li>
-</ul>
+<p>Morning peak sales | Coffee & Bread top-selling | Customers buy multiple items</p>
 </section>
 
 <section>
@@ -72,8 +128,12 @@ h2 {
 
 <section>
 <h2>Contact</h2>
-<p>https://www.linkedin.com/in/devika-modhe-94781128a/</p>
+<a class="btn" href="https://www.linkedin.com/in/devika-modhe-94781128a/" target="_blank">Connect on LinkedIn 🔗</a>
 </section>
+
+<footer>
+<p>© 2026 Devika | Data Analytics Portfolio</p>
+</footer>
 
 </body>
 </html>
