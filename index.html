@@ -4,52 +4,49 @@
 <title>Devika | Portfolio</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    font-family: Arial;
+    margin: 0;
+    background: #f5f7fa;
 }
 
-/* HERO */
+/* SMALL HEADER */
 .hero {
-    height: 60vh;
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
+    padding: 30px 10px;
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 26px;
 }
 
 .hero p {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 .btn {
-    margin-top: 15px;
-    padding: 10px 20px;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
     background: white;
     color: #333;
     text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
+    border-radius: 15px;
+    font-size: 13px;
 }
 
 /* SECTION */
 section {
-    padding: 60px 20px;
+    padding: 20px;
     text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 /* CARDS */
@@ -57,28 +54,41 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 12px;
 }
 
 .card {
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    width: 260px;
-    border-radius: 15px;
-    color: black;
-    transition: 0.3s;
+    background: white;
+    padding: 15px;
+    width: 230px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: scale(1.05);
+.card h3 {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 13px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #667eea;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 /* FOOTER */
 footer {
     background: #111;
     color: white;
-    padding: 15px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
 }
 </style>
 
@@ -86,52 +96,60 @@ footer {
 
 <body>
 
+<!-- HEADER -->
 <div class="hero">
-    <h1>Hi, I'm Devika 👋</h1>
+    <h1>Devika 👋</h1>
     <p>Data Analytics Enthusiast</p>
+
     <a class="btn" href="https://github.com/devika22507" target="_blank">GitHub</a>
     <a class="btn" href="https://www.linkedin.com/in/devika-modhe-94781128a/" target="_blank">LinkedIn</a>
 </div>
 
+<!-- PROJECTS -->
 <section>
-<h2>🚀 My Projects</h2>
+<h2>🚀 Projects</h2>
 
 <div class="container">
 
 <div class="card">
-<h3>Task-1</h3>
-<p>Data Cleaning</p>
-<a href="https://github.com/devika22507/task-1_repo" target="_blank">View</a>
+<h3>Task-1: Data Cleaning</h3>
+<p>Cleaned bakery dataset, handled missing values, and prepared structured data for analysis.</p>
+<a href="https://github.com/devika22507/task-1_repo" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<h3>Task-2</h3>
-<p>EDA Analysis</p>
-<a href="https://github.com/devika22507/task-2_repo" target="_blank">View</a>
+<h3>Task-2: EDA</h3>
+<p>Analyzed sales trends, customer behavior, and visualized insights using Python.</p>
+<a href="https://github.com/devika22507/task-2_repo" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<h3>Task-3</h3>
-<p>Power BI Dashboard</p>
-<a href="https://github.com/devika22507/task-3_repo" target="_blank">View</a>
+<h3>Task-3: Dashboard</h3>
+<p>Built interactive Power BI dashboard with KPIs, sales trends, and product analysis.</p>
+<a href="https://github.com/devika22507/task-3_repo" target="_blank">View Project</a>
 </div>
 
 <div class="card">
-<h3>Task-4</h3>
-<p>Storytelling & Hypothesis</p>
-<a href="https://github.com/devika22507/task-4_repo" target="_blank">View</a>
+<h3>Task-4: Storytelling</h3>
+<p>Created data story, applied hypothesis testing, and delivered business insights.</p>
+<a href="https://github.com/devika22507/task-4_repo" target="_blank">View Project</a>
 </div>
 
 </div>
 </section>
 
+<!-- KEY INSIGHTS -->
 <section>
 <h2>📊 Key Insights</h2>
-<p>Morning peak sales • Coffee top-selling • Multi-item purchases</p>
+<p>• Peak sales occur during morning (8–11 AM)<br>
+• Coffee, bread, and tea are top-selling items<br>
+• Customers purchase multiple items per order<br>
+• Weekday sales are higher than weekends</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Devika | Portfolio</p>
+<p>© 2026 Devika | Data Analytics Portfolio</p>
 </footer>
 
 </body>
