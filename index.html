@@ -4,67 +4,80 @@
 <title>Devika | Portfolio</title>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #f5f7fa;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
 }
 
-header {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    padding: 60px 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+.hero h1 {
+    font-size: 50px;
 }
 
-header p {
-    font-size: 18px;
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
 }
 
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* SECTION */
 section {
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
 }
 
+/* CARDS */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .card {
-    background: white;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
     padding: 20px;
-    width: 250px;
+    width: 260px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: black;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: #4facfe;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
+/* FOOTER */
 footer {
-    background: #222;
+    background: #111;
     color: white;
-    text-align: center;
     padding: 15px;
 }
 </style>
@@ -73,66 +86,52 @@ footer {
 
 <body>
 
-<header>
-<h1>Devika</h1>
-<p>Data Analytics Portfolio 🚀</p>
-</header>
+<div class="hero">
+    <h1>Hi, I'm Devika 👋</h1>
+    <p>Data Analytics Enthusiast</p>
+    <a class="btn" href="https://github.com/devika22507" target="_blank">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/devika-modhe-94781128a/" target="_blank">LinkedIn</a>
+</div>
 
 <section>
-<h2>About Me</h2>
-<p>I am a B.Tech Computer Science student passionate about Data Analytics and Visualization.</p>
-</section>
-
-<section>
-<h2>Projects</h2>
+<h2>🚀 My Projects</h2>
 
 <div class="container">
 
 <div class="card">
 <h3>Task-1</h3>
-<p>Data Cleaning using Python</p>
-<a class="btn" href="https://github.com/devika22507/task-1_repo" target="_blank">View Project</a>
+<p>Data Cleaning</p>
+<a href="https://github.com/devika22507/task-1_repo" target="_blank">View</a>
 </div>
 
 <div class="card">
 <h3>Task-2</h3>
-<p>Exploratory Data Analysis</p>
-<a class="btn" href="https://github.com/devika22507/task-2_repo" target="_blank">View Project</a>
+<p>EDA Analysis</p>
+<a href="https://github.com/devika22507/task-2_repo" target="_blank">View</a>
 </div>
 
 <div class="card">
 <h3>Task-3</h3>
 <p>Power BI Dashboard</p>
-<a class="btn" href="https://github.com/devika22507/task-3_repo" target="_blank">View Project</a>
+<a href="https://github.com/devika22507/task-3_repo" target="_blank">View</a>
 </div>
 
 <div class="card">
 <h3>Task-4</h3>
-<p>Data Storytelling & Hypothesis Testing</p>
-<a class="btn" href="https://github.com/devika22507/task-4_repo" target="_blank">View Project</a>
+<p>Storytelling & Hypothesis</p>
+<a href="https://github.com/devika22507/task-4_repo" target="_blank">View</a>
 </div>
 
 </div>
-
 </section>
 
 <section>
-<h2>Key Insights</h2>
-<p>Morning peak sales | Coffee & Bread top-selling | Customers buy multiple items</p>
-</section>
-
-<section>
-<h2>View My Work</h2>
-<a class="btn" href="https://github.com/devika22507" target="_blank">GitHub Profile</a>
-</section>
-
-<section>
-<h2>Contact</h2>
-<a class="btn" href="https://www.linkedin.com/in/devika-modhe-94781128a/" target="_blank">Connect on LinkedIn 🔗</a>
+<h2>📊 Key Insights</h2>
+<p>Morning peak sales • Coffee top-selling • Multi-item purchases</p>
 </section>
 
 <footer>
-<p>© 2026 Devika | Data Analytics Portfolio</p>
+<p>© 2026 Devika | Portfolio</p>
 </footer>
 
 </body>
